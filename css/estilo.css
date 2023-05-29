@@ -38,41 +38,46 @@ a {
 	position: sticky;
 	top: 0px;
 	height: 3.5cm;
+	margin-right: 0px;
 }
-
 .nav-bar {
 	background-color: #f1f1f1;
-	height: 60px;
+	height: 45px;
 	width: 600px;
 	border-radius: 20px;
 	padding-left: 20px;
 	padding-bottom: 0.5px;
 	padding-top:0.5px;
-	margin-top: -30px;
+	margin-top: -20px;
 	display: flex;
 	align-items: center;
   }
+
+  .d-flex{
+	display: inline-flex; /*coloco en uno al lado del otro los elementos de esta caja*/
+}
   
-  input[type="search"] {
+  input[type="search"] { /* barra de busqueda */
 	border: none;
 	background-color: transparent;
-	flex: 1;
-	width: 85%;
-	padding:10px;
-	margin-right: 10px;
-	margin-top: 30px;
+	margin-right: 50px; /*el margin los bordes externos del objeto, es este caso es el margen derecho*/
+	padding: 13px; /*el padding son los bordes internos del objeto*/
+	width: 560px;
+
+  }
+  .card-text{
+	border-radius: 5px;
   }
   
-  button[type="button"] {
+  button[type="button"] { /* boton de busqueda */
 	border: none;
 	background-color: #333;
 	color: #fff;
-	padding: 10px;
-	flex: 1;
+	flex:1;
 	border-radius: 5px;
-	cursor: pointer;	
-	margin-left: 612.5px;
-	margin-top: -34556px;
+	cursor: pointer;
+	padding: 10px;
+	position: relative;
   }
   
 
@@ -87,6 +92,7 @@ nav {
 	font-size: 0;
 	/* truco por el uso de inline-block*/
 	list-style: none;
+	margin-top: 13px;
 }
 
 .menu li {
@@ -143,6 +149,7 @@ nav {
 
 .parallax p, .parallax a {
 	text-align: justify;
+	color:black;
 }
 
 article img{
