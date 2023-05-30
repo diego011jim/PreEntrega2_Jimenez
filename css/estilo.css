@@ -204,5 +204,12 @@ article img{
 	color: black;
 }
   
-
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+	
+  }
   
+  /* Estilos para pantallas medianas y grandes */
+  @media (min-width: 769px) {
+	
+  }
