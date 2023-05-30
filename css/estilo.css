@@ -50,6 +50,7 @@ a {
 	padding-top:0.5px;
 	margin-top: -20px;
 	display: flex;
+	flex: wrap;
 	align-items: center;
   }
 
