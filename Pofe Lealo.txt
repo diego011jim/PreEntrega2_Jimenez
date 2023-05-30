@@ -1,0 +1,1 @@
+profe me falto hacer los responsive para las vistas movil y desktop 
