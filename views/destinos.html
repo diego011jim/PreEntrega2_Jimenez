@@ -5,28 +5,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Destinos</title>
 	<link rel="stylesheet" href="../css/estilo.css">
+
+	<!-- fuentes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500;600;700&display=swap"
+		rel="stylesheet">
+
 </head>
 <body>
 	<!-- inicio encabezado -->
-	<header>
+	<header class="cabecera">
+		
 		<!-- logo -->
-		<h3>LOGO</h3>
-		<!-- fin logo -->
-		<!-- inicio nav -->
-		<nav>
-			<ul>
+		<nav class="logo_nombre">
+			<img id="top" src="../assets/img/logo.png" alt="logo sitio" width="72" height="76">
+			<h1>ArSal.Tour</h1>
+		</nav>
+		
+		<!--buscador-->
+		<nav class="nav-bar">
+
+			<div class="container-fluid">
+			  <form class="d-flex" role="search">
+				<input type="search" placeholder="Busca tu destino" aria-label="Busca tu destino">
+				<button type="button">Buscar</button>
+			  </form>
+			</div>
+		
+		
+			<!--menu de opciones-->
+		
+			<ul class="menu">
+				
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="/Coder House/FULL-STACK/1-Desarrollo Web/MY WEB SITE/views/nosotros.html"a>Nosotros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="https://www.google.com" target="_blank">Ir a GOOGLE</a></li>
+				
+				<li><a href="../views/destinos.html">Destinos</a></li>
+				
+				<li><a href="../views/nosotros.html">Nosotros</a></li>
+				
+				<li><a href="../views/contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
 		<!-- fin nav -->
 	</header>
 	<!-- fin encabezado -->
+
 	<!-- inicio contenido -->
 	<section>
-		<article>
+		<article class="art">
 			<!-- inicio tabla -->
 			<table border="1px" cellpadding="20px">
 				<tr>
@@ -68,7 +95,7 @@
 			<td><h2>UBICACIÓN</h2></td>
 		</tr>
 		<tr>
-			<td><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12574.580601619808!2d-57.5736739!3d-38.0087366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x643af57e4933f20!2sCasa%20del%20Puente!5e0!3m2!1ses-419!2sar!4v1623936862367!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></td>
+			<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.43113912035!2d-65.51303065746208!3d-24.79606224025438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses-419!2sar!4v1686073916996!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
 		</tr>
 		<tr>
 			<td><iframe width="560" height="315" src="https://www.youtube.com/watch?v=W_n6DyZD2oI&ab_channel=ConociendoLugares" title="Salta te espera!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>

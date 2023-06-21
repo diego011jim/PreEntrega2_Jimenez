@@ -1,24 +1,57 @@
 <!DOCTYPE html>
+
+
 <html lang="es">
+
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--titulo de pestaña-->
 	<title>Nosotros</title>
-	<link rel="stylesheet" href="../css/estilo.css">
+
+	<!-- fuentes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500;600;700&display=swap" rel="stylesheet">
+	
+	<!--linkeo el css-->
+	<link rel="stylesheet" href="../css/estilo-n.css">
 </head>
+
+<!--cuerpo de la pagina web-->
 <body>
 	<!-- inicio encabezado -->
-	<header>
-		<!-- logo -->
-		<img src="../assets/img/beach.png" alt="logo sitio">
-		<!-- fin logo -->
-		<!-- inicio nav -->
-		<nav>
-			<ul>
+	<header class="cabecera">
+		
+		<!-- logo y letra -->
+		<nav class="logo_nombre">
+			<img id="top" src="../assets/img/logo.png" alt="logo sitio" width="72" height="76">
+			<h1>ArSal.Tour</h1>
+		</nav>
+
+		<!--buscador y menu-->
+		<nav class="nav-bar">
+
+			<!--buscador-->
+			<div class="container-fluid">
+			  <form class="d-flex" role="search">
+				<input type="search" placeholder="Busca tu destino" aria-label="Busca tu destino">
+				<button type="button">Buscar</button>
+			  </form>
+			</div>
+		
+			<!--menu de opciones-->
+			<ul class="menu">
+				
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="destinos.html">Destinos</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="https://www.google.com" target="_blank">Ir a GOOGLE</a></li>
+				
+				<li><a href="../views/destinos.html">Destinos</a></li>
+				
+				<li><a href="../views/nosotros.html">Nosotros</a></li>
+				
+				<li><a href="../views/contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
 		<!-- fin nav -->

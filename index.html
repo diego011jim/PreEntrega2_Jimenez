@@ -7,7 +7,9 @@
 <head>
 
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 
 	<!--titutlo de pestaña-->
 	<title>Inicio</title>
@@ -15,10 +17,10 @@
 	<!-- fuentes-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500;600;700&display=swap"
-		rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500;600;700&display=swap" rel="stylesheet">
+	
 	<!-- linkear nuestro css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/estilo.css">
 
 </head>
@@ -29,26 +31,27 @@
 	<!-- encabezado -->
 	<header class="cabecera">
 		
-		<!-- logo -->
-		<img id="top" src="./assets/img/logo.png" alt="logo sitio" width="72" height="76">
-		<h1>ArSal.Tour</h1>
-		
-		<!--buscador-->
+		<!-- logo y letra -->
+		<nav class="logo_nombre">
+			<img id="top" src="./assets/img/logo.png" alt="logo sitio" width="72" height="76">
+			<h1>ArSal.Tour</h1>
+		</nav>
+
+		<!--buscador y menu-->
 		<nav class="nav-bar">
 
+			<!--buscador-->
 			<div class="container-fluid">
 			  <form class="d-flex" role="search">
 				<input type="search" placeholder="Busca tu destino" aria-label="Busca tu destino">
 				<button type="button">Buscar</button>
 			  </form>
 			</div>
-		</nav>
 		
-		<!--menu de opciones-->
-		<nav>
+			<!--menu de opciones-->
 			<ul class="menu">
 				
-				<li><a href="#">Home</a></li>
+				<li><a href="#top">Home</a></li>
 				
 				<li><a href="./views/destinos.html">Destinos</a></li>
 				
@@ -60,12 +63,7 @@
 
 	</header>
 
-	<!--menu de la pagina-->
-	<main>
 
-	</main>
-
-	
 	<!-- inicio parallax -->
 	<section class="parallax">
 			<!--tarjeta de presentacion de destino-->
@@ -76,7 +74,7 @@
 			  		<h4 class="card-title">CACHI</h4>
 			  		<img src="./assets/img/header4.jpg" class="card-img-top" alt="this is cachi" width="360" height="300">
 			  		<h4 class="card-text">cachi un destino lleno de sorpresas, paisajes y experiencias de otro nivel!</h4>
-			  		<h4 href="#" class="card-text">Vivi la experiencia !!</h4>
+			  		<a href="#" class="card-text-2">Vivi la experiencia !!</a>
 				</div>
 
 				<!--tarjeta de iruya-->
@@ -84,7 +82,7 @@
 			  		<h4 class="card-title">IRUYA</h4>
 			  		<img src="./assets/img/header5.jpg" class="card-img-top" alt="this is iruya" width="360" height="300">
 			  		<h4 class="card-text">Una aventura en las alturas no dejes que te la cuenten veni y disfrutaa !.</h4>
-			  		<h4 href="#" class="card-text">Vivi la experiencia !!</h4>
+			  		<a href="#" class="card-text-2">Vivi la experiencia !!</a>
 				</div>
 
 				<!--tarjeta de san antonio de los cobres-->
@@ -92,56 +90,81 @@
 					<h4 class="card-title">San Antonio de los Cobres</h4>
 					<img src="./assets/img/header6.jpg" class="card-img-top" alt="this is SA-Cobres" width="360" height="300">
 					<h4 class="card-text">Una aventura en las alturas no dejes que te la cuenten veni y disfrutaa !.</h4>
-					<h4 href="#" class="card-text">Vivi la experiencia !!</h4>
+					<a href="#" class="card-text-2">Vivi la experiencia !!</a>
 				</div>
 			
 			</div>
 	</section>  <!-- fin parallax  -->
-
-	<section class="tour novedades">
+	
+	<!--menu de la pagina-->
+	<main class="menu_main">
+	
+		<section class="tour_novedades">
 		
-		<article>
-
-			<h2>Primer artículo</h2>
 			
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, accusamus in dolorum expedita voluptatum
+
+			<article class="cont_article">
+
+				<h2>SALTA-CAPITAL</h2>
+			
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, accusamus in dolorum expedita voluptatum
 				facilis quo. Eum distinctio, quisquam facilis earum exercitationem quam totam recusandae quae dolores,
 				nesciunt ducimus sequi, qui fugiat eligendi? Ad commodi, saepe cum voluptates aliquid explicabo!</p>
-			<p>Voluptatem tenetur itaque, ratione impedit aperiam consequatur cupiditate cumque necessitatibus fugit
+				<p>Voluptatem tenetur itaque, ratione impedit aperiam consequatur cupiditate cumque necessitatibus fugit
 				voluptatum accusamus ipsam doloremque laborum. Reprehenderit nisi quidem ea assumenda, beatae, inventore
 				cumque officia minima quis provident illo tempora quo perspiciatis doloribus. Aspernatur in
 				exercitationem aliquam quae eius veritatis.</p>
-			<p>Sequi, distinctio fugiat! Sapiente ipsum corrupti eaque veritatis laborum enim dolorum, eos dolore
+				<p>Sequi, distinctio fugiat! Sapiente ipsum corrupti eaque veritatis laborum enim dolorum, eos dolore
 				ducimus suscipit aut molestias assumenda aliquam numquam voluptatum et cum perferendis deleniti facilis
 				atque mollitia, reiciendis iste officia dignissimos. Aliquam sed magnam cum distinctio officiis quidem
 				consequatur.</p>
-			<img src="./assets/img/header1.jpg" alt="">
+				<img src="./assets/img/header1.jpg" alt="">
 
-		</article>
-		
-		
-		
-		<article>
+			</article>
 			
-			<h2>Segundo artículo</h2>
+				
+			<article class="cont_article">
 			
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, accusamus in dolorum expedita voluptatum
+				<h2>CAFAYATE</h2>
+			
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, accusamus in dolorum expedita voluptatum
 				facilis quo. Eum distinctio, quisquam facilis earum exercitationem quam totam recusandae quae dolores,
 				nesciunt ducimus sequi, qui fugiat eligendi? Ad commodi, saepe cum voluptates aliquid explicabo!</p>
-			<p>Voluptatem tenetur itaque, ratione impedit aperiam consequatur cupiditate cumque necessitatibus fugit
+				<p>Voluptatem tenetur itaque, ratione impedit aperiam consequatur cupiditate cumque necessitatibus fugit
 				voluptatum accusamus ipsam doloremque laborum. Reprehenderit nisi quidem ea assumenda, beatae, inventore
 				cumque officia minima quis provident illo tempora quo perspiciatis doloribus. Aspernatur in
 				exercitationem aliquam quae eius veritatis.</p>
-			<p>Sequi, distinctio fugiat! Sapiente ipsum corrupti eaque veritatis laborum enim dolorum, eos dolore
+				<p>Sequi, distinctio fugiat! Sapiente ipsum corrupti eaque veritatis laborum enim dolorum, eos dolore
 				ducimus suscipit aut molestias assumenda aliquam numquam voluptatum et cum perferendis deleniti facilis
 				atque mollitia, reiciendis iste officia dignissimos. Aliquam sed magnam cum distinctio officiis quidem
 				consequatur.</p>
-			<img src="./assets/img/header3.jpg" alt="">
+				<img src="./assets/img/header3.jpg" alt="">
 
-		</article>
+			</article>
+			
+			
+			<article class="cont_article">
+			
+				<h2>DIQUE CABRA CORRAL</h2>
+			
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, accusamus in dolorum expedita voluptatum
+				facilis quo. Eum distinctio, quisquam facilis earum exercitationem quam totam recusandae quae dolores,
+				nesciunt ducimus sequi, qui fugiat eligendi? Ad commodi, saepe cum voluptates aliquid explicabo!</p>
+				<p>Voluptatem tenetur itaque, ratione impedit aperiam consequatur cupiditate cumque necessitatibus fugit
+				voluptatum accusamus ipsam doloremque laborum. Reprehenderit nisi quidem ea assumenda, beatae, inventore
+				cumque officia minima quis provident illo tempora quo perspiciatis doloribus. Aspernatur in
+				exercitationem aliquam quae eius veritatis.</p>
+				<p>Sequi, distinctio fugiat! Sapiente ipsum corrupti eaque veritatis laborum enim dolorum, eos dolore
+				ducimus suscipit aut molestias assumenda aliquam numquam voluptatum et cum perferendis deleniti facilis
+				atque mollitia, reiciendis iste officia dignissimos. Aliquam sed magnam cum distinctio officiis quidem
+				consequatur.</p>
+				<img src="./assets/img/header7.jpg" alt="">
 
-	</section>
+			</article>
+			
+		</section>
 
+	</main>
 	<!--barra lateral-->
 	<aside>
 
@@ -149,7 +172,20 @@
 
 	<!-- inicio footer -->
 	<footer>
-		<a href="#top"><I>Inicio</I></a>
+		
+		<!--inicio de redes-->
+		<section class="buttons">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-youtube"></a>
+		</section>
+		<!--fin de redes-->
+
+		<a href="#" class="arriba"><I>Inicio</I></a>
+		<p><hr>2023 - Todos los derechos reservados</hr></p>
+
 	</footer>
 	
 </body>
