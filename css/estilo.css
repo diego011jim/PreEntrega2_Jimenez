@@ -23,7 +23,18 @@ body
 
 h2{
 	font-family: 'Amstagram';
-	font-size: xx-large;
+	font-size:300%;
+    margin-bottom: 5%;
+}
+
+.dest{
+	border-radius: 10px;
+    background-color: palegreen;
+}
+
+h3{
+	font-family: 'Amstagram';
+	font-size: x-large;
 }
 
 li{
@@ -317,8 +328,6 @@ footer{
 	font-size: larger;
 	align-items: center;
 }
-
-
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
 	

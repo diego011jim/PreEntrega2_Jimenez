@@ -13,7 +13,12 @@
 	font-family: 'Amstagram';
 	src: url('../assets/font/Amstagram.ttf');
 }
-
+body
+{
+	font-family: 'Josefin Sans';
+	background-color:aliceblue;
+	overflow-x: hidden;
+}
 h2{
 	font-family: 'Amstagram';
 	font-size: xx-large;
@@ -31,6 +36,7 @@ a {
 	font-size: 1.2rem;
 	line-height: 2rem;
 }
+
 
 .cabecera {
 	background-color:rgb(150, 228, 72);
@@ -95,6 +101,22 @@ button[type="button"] {
 	cursor: pointer;
 	padding: 10px;
 }
+
+.menu_main{
+	width: 70%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+	text-align: center;
+}
+.card-text{
+	border-radius: 5px;
+}
+  
+
+  
 .menu, .submenu {
 	font-size: 0;
 	/* truco por el uso de inline-block*/
@@ -111,6 +133,7 @@ button[type="button"] {
 	position: relative;
 	font-size: 2rem;
 }
+
 .submenu {
 	position: absolute;
 	/* display: none; */
